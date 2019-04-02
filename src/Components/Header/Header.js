@@ -3,7 +3,7 @@ import React from 'react';
 let Header = props => {
 	return (
 		<div style={{
-				borderBottom:'3px solid #F3F7F8',
+				borderBottom:'3px solid black',
 				backgroundColor:'#5F4A62',
 				color:'white'}}
 				className='container-fluid fixed-top'>
