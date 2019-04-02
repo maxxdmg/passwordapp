@@ -1,6 +1,6 @@
 import React from 'react';
 
-let Intro = props => {
+let Step2 = props => {
     return (
         <div style={{ backgroundColor: '#1C7AD8', marginTop: '50px' }}
             className='container p-0'>
@@ -19,4 +19,4 @@ let Intro = props => {
     );
 };
 
-export default Intro;
+export default Step2;
