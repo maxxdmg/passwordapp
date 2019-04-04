@@ -3,7 +3,7 @@ import React from 'react';
 let Intro = props => {
     return (
         <div style={{ backgroundColor: '#72AE5F', marginTop: '175px' }}
-            className='container p-0'>
+            className='container ml-2 p-0'>
             <div className='text-left p-3'>
                 <h2 className='font-weight-bold'> Welcome! </h2>
             </div>
