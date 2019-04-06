@@ -10,6 +10,7 @@ import Step4 from './Components/Step4/Step4.js';
 class App extends Component {
   state = {
     passText: '********',
+    location: 0,
     animate: false
   };
 
@@ -20,31 +21,33 @@ class App extends Component {
 
   handleScroll = () => {
     let scrollOffset = window.pageYOffset;
-    console.log(scrollOffset);
-    if (scrollOffset >= 200 && scrollOffset < 400)
+    console.log(scrollOffset-this.state.location);
+    if (scrollOffset - this.state.location > 135) {
+      if (scrollOffset >= 135 && scrollOffset < 400)
       this.setState({passText: 'password', animate: true}, () => {
         setTimeout(() => {
-          this.setState({animate: false})
+          this.setState({location: scrollOffset, animate: false})
         }, 1000);
       });
-    else if (scrollOffset >= 400 && scrollOffset < 600)
-      this.setState({passText: 'passwordpassword', animate: true}, () => {
-        setTimeout(() => {
-          this.setState({animate: false})
-        }, 1000);
-      });
-    else if (scrollOffset >= 600 && scrollOffset < 800)
-      this.setState({passText: 'passwordpassword12', animate: true}, () => {
-        setTimeout(() => {
-          this.setState({animate: false})
-        }, 1000);
-      });
-    else if (scrollOffset >= 800 && scrollOffset < 1000)
-      this.setState({passText: 'shinemetroid12', animate: true}, () => {
-        setTimeout(() => {
-          this.setState({animate: false})
-        }, 1000);
-      });
+      else if (scrollOffset >= 400 && scrollOffset < 600)
+        this.setState({passText: 'passwordpassword', animate: true}, () => {
+          setTimeout(() => {
+            this.setState({location: scrollOffset, animate: false})
+          }, 1000);
+        });
+      else if (scrollOffset >= 600 && scrollOffset < 800)
+        this.setState({passText: 'passwordpassword12', animate: true}, () => {
+          setTimeout(() => {
+            this.setState({location: scrollOffset, animate: false})
+          }, 1000);
+        });
+      else if (scrollOffset >= 800 && scrollOffset < 1000)
+        this.setState({passText: 'shinemetroid12', animate: true}, () => {
+          setTimeout(() => {
+            this.setState({location: scrollOffset, animate: false})
+          }, 1000);
+        });
+    }
   }
 
   render() {

@@ -3,17 +3,21 @@ import React from 'react';
 let Intro = props => {
     return (
         <div style={{ backgroundColor: '#72AE5F', marginTop: '175px' }}
-            className='container ml-2 p-0'>
+            className='container p-0'>
             <div className='text-left p-3'>
-                <h2 className='font-weight-bold'> Welcome! </h2>
+                <h2 className='font-weight-bold'> Anatomy of a Password! </h2>
             </div>
             <div className='w-100' />
             <div style={{ backgroundColor: '#72D75F', width: '100%', padding: '3px', paddingTop: '12px'}} >
-                <ul>
-                    <li> hello world </li>
-                    <li> hello jupiter </li>
-                    <li> hello mars </li>
-                </ul>
+                <p style={{'textIndent': '40px'}} className='p-3'>The art of Password creation becomes more and more critical as society 
+                	is increasingly digitized. Lacking good password practices has greater consequences now than
+                	ever before, only growing exponentially as time goes on. Good password practices and 
+                	where they come from will be dissected throughout this short semi-interactive site, so that
+                	readers not only know the standards of good password practices but also have the innerworkings
+                	of password cracking demystified. This site is not a lecture but a walkthrough of the 
+                	anatomy of a password!
+                </p>
+                
             </div>
         </div>
     );

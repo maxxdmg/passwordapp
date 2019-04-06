@@ -2,20 +2,14 @@ import React from 'react';
 
 let Step4 = props => {
     return (
-        <div style={{ backgroundColor: '#70bb4f', marginTop: '175px' }}
+        <div style={{ backgroundColor: '#BF2DC7', marginTop: '500px' }}
             className='container p-0'>
             <div className='text-left p-3'>
-                <h2 className='font-weight-bold'> Step 4: Strong Password </h2>
+                <h2 className='font-weight-bold'> Section header goes here! </h2>
             </div>
             <div className='w-100' />
-            <div style={{ backgroundColor: '#589B3B', width: '100%' }} >
-                <ul>
-                    <li> Long passwords with letters, numbers, and symbols that don't contain common phrases are the most secure. </li>
-                    <li> Example "!!GreenWeb1234PaperTrumpet##" </li>
-                    <li> hello mars </li>
-                </ul>
-
-
+            <div style={{ backgroundColor: '#D361DB', width: '100%', padding: '3px', paddingTop: '12px'}} >
+                <p>Text goes here!</p>
             </div>
         </div>
     );
