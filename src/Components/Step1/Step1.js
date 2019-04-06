@@ -5,11 +5,22 @@ let Step1 = props => {
         <div style={{ backgroundColor: '#D65155', marginTop: '50px' }}
             className='container p-0'>
             <div className='text-left p-3'>
-                <h2 className='font-weight-bold'> Longer Passwords & Brute-Forcing  </h2>
+                <h2 className='font-weight-bold'> Longer Passwords & Brute Forcing  </h2>
             </div>
             <div className='w-100' />
             <div style={{ backgroundColor: '#EC555A', width: '100%', padding: '3px', paddingTop: '12px' }} >
-                 <p style={{'textIndent': '40px'}} className='p-3'>Text goes here
+                 <p style={{'textIndent': '40px'}} className='p-3'>The length of a password is the most crucial
+                 aspect of it's strength. This is due to the fundamental nature of how password cracking works. 
+                 Password cracking is the act of guessing passwords until the correct one is found. Also known as
+                 brute forcing passwords, all tools and methods for cracking is built upon the idea of brute force.
+                 But how the length of a password deters cracking is very simple. The time taken to guess a password
+                 gets exponentially larger the longer a password is. For a complex password the amount of time needed
+                 to guess a password with basic brute forcing is unreasonably long. For example the time it takes to 
+                 crack (which is just simply guessing) the 7 character long password 'abcdefg' is 0.29 millseconds 
+                 as of 2015. That is pretty quick, by changing the password from the seven character long 'abcdefg'
+                 to the 12 character long 'abcdefghijkl' the time to crack is increased to 2 centuries. That is a 
+                 giant jump for just adding 5 extra characters which shows how impactful the length of a password 
+                 truly is.
                 </p>
                 
             </div>
