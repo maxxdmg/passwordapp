@@ -6,12 +6,14 @@ import Step1 from './Components/Step1/Step1.js';
 import Step2 from './Components/Step2/Step2.js';
 import Step3 from './Components/Step3/Step3.js';
 import Step4 from './Components/Step4/Step4.js';
+import Controls from './Components/Controls/Controls.js';
 
 class App extends Component {
   state = {
     passText: '********',
     location: 0,
-    animate: false
+    animate: false,
+    hovered: false
   };
 
   componentDidMount() {
@@ -21,6 +23,7 @@ class App extends Component {
 
   handleScroll = () => {
     let scrollOffset = window.pageYOffset;
+    
     console.log(scrollOffset-this.state.location);
     if (scrollOffset - this.state.location > 135) {
       if (scrollOffset >= 135 && scrollOffset < 400)
@@ -54,6 +57,7 @@ class App extends Component {
     return (
       <div>
         <Header password={this.state.passText} animate={this.state.animate} />
+        <Controls />
         <Intro />
         <Step1 />
         <Step2 />

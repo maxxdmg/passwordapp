@@ -8,3 +8,13 @@
   50% { background-color: blue; color: blue;}
   100% { background-color: white; color: black;}
 }
+
+.Git {
+   background-image: url('./git.png');
+   height: 64px;
+   width: 64px;
+}
+
+.Git:hover {
+   background-image: url('./git_white.png');
+}

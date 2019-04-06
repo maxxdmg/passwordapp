@@ -2,13 +2,13 @@ import React from 'react';
 
 let Intro = props => {
     return (
-        <div style={{ backgroundColor: '#72AE5F', marginTop: '175px' }}
+        <div style={{ backgroundColor: '#72AE5F', marginTop: '120px'}}
             className='container p-0'>
             <div className='text-left p-3'>
                 <h2 className='font-weight-bold'> Anatomy of a Password! </h2>
             </div>
             <div className='w-100' />
-            <div style={{ backgroundColor: '#72D75F', width: '100%', padding: '3px', paddingTop: '12px'}} >
+            <div style={{ backgroundColor: '#72D75F', width: '100%', padding: '2px', paddingTop: '12px', height: '500px'}} >
                 <p style={{'textIndent': '40px'}} className='p-3'>The art of Password creation becomes more and more critical as society 
                 	is increasingly digitized. Lacking good password practices has greater consequences now than
                 	ever before, only growing as time goes on. Good password practices and 

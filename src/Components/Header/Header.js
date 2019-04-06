@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from './git.png';
 import './Header.css';
 	
 let Header = props => {
@@ -19,6 +20,12 @@ let Header = props => {
 					<h5 style={{
 						lineHeight: '40px'
 						}} className={props.animate ? 'animate' : ''}>{props.password}</h5>
+				</div>
+				<div className='col-2' />
+				<div className='col-1 mt-1'>
+					<a href={'https://github.com/maxxdmg/passwordapp'}>
+						<img src={Icon} alt={'github'} style={{'width': '64px', 'height': '64px'}} />
+					</a>
 				</div>
 			</div>
 		</div>
