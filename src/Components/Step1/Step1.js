@@ -5,11 +5,13 @@ let Step1 = props => {
         <div style={{ backgroundColor: '#D65155', marginTop: '50px' }}
             className='container p-0'>
             <div className='text-left p-3'>
-                <h2 className='font-weight-bold'>Section header goes here</h2>
+                <h2 className='font-weight-bold'> Longer Passwords & Brute-Forcing  </h2>
             </div>
             <div className='w-100' />
             <div style={{ backgroundColor: '#EC555A', width: '100%', padding: '3px', paddingTop: '12px' }} >
-                <p>Text goes here</p>
+                 <p style={{'textIndent': '40px'}} className='p-3'>Text goes here
+                </p>
+                
             </div>
         </div>
     );
