@@ -13,11 +13,20 @@ class App extends Component {
     passText: '********',
     location: 0,
     animate: false,
-    hovered: false
+    hovered: false,
+    paneClass: ''
   };
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleButtonDown = () => {
+    this.setState({paneClass: 'transitionPane'}, () => {
+      setTimeout(() => {
+        this.setState({paneClass: ''})
+      }, 1000)
+    });
   }
 
 
@@ -57,12 +66,12 @@ class App extends Component {
     return (
       <div>
         <Header password={this.state.passText} animate={this.state.animate} />
-        <Controls />
-        <Intro />
-        <Step1 />
-        <Step2 />
-        <Step3 />
-        <Step4 />
+        <Controls downClick={this.handleButtonDown}/>
+        <Intro transition={this.state.paneClass}/>
+        <Step1 transition={this.state.paneClass}/>
+        <Step2 transition={this.state.paneClass}/>
+        <Step3 transition={this.state.paneClass}/>
+        <Step4 transition={this.state.paneClass}/>
       </div>
     );
   }

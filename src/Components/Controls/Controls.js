@@ -9,7 +9,8 @@ const Controls = props => {
         height: '150px', float: 'left', marginLeft: '35px' }}>
             <UpButton />
             <div className='w-100' />
-            <DownButton />
+            <DownButton 
+            	clicked={props.downClick}/>
         </div>
     );
 };

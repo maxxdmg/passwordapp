@@ -2,9 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(./bg.PNG);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,5 +14,16 @@ code {
 
 p {
   font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+h1, h2 {
+  font-family: 'Ubuntu Mono', sans-serif;
+  color: white;
+}
+
+.transitionPane {
+  transform: translateY(-630px);
 }
 

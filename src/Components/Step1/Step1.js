@@ -1,14 +1,17 @@
 import React from 'react';
 
 let Step1 = props => {
+    let cssClass = 'container p-0';
+    if (props.transition)
+        cssClass += ' ' + props.transition;
     return (
-        <div style={{ backgroundColor: '#D65155', marginTop: '50px' }}
-            className='container p-0'>
+        <div style={{ backgroundColor: '#EC9717FF', marginTop: '50px' }}
+            className={cssClass}>
             <div className='text-left p-3'>
                 <h2 className='font-weight-bold'> Longer Passwords & Brute Forcing  </h2>
             </div>
             <div className='w-100' />
-            <div style={{ backgroundColor: '#EC555A', width: '100%', padding: '3px', paddingTop: '12px' }} >
+            <div style={{ backgroundColor: '#EFAA42FF', width: '100%', padding: '3px', paddingTop: '12px', height: '500px' }} >
                  <p style={{'textIndent': '40px'}} className='p-3'>The length of a password is the most crucial
                  aspect of it's strength. This is due to the fundamental nature of how password cracking works. 
                  Password cracking is the act of guessing passwords until the correct one is found. Also known as
