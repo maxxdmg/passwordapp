@@ -19,7 +19,7 @@ let Step1 = props => {
                  crack (which is just simply guessing) the 7 character long password 'abcdefg' is 0.29 millseconds 
                  as of 2015. That is pretty quick, by changing the password from the seven character long 'abcdefg'
                  to the 12 character long 'abcdefghijkl' the time to crack is increased to 2 centuries. That is a 
-                 giant jump for just adding 5 extra characters which shows how impactful the length of a password 
+                 giant jump for an added 5 extra characters which shows how impactful the length of a password 
                  truly is.
                 </p>
                 

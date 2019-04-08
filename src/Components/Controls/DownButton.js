@@ -1,12 +1,12 @@
 import React from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowDown } from 'react-icons/fa';
 
-const UpButton = props => {
+const DownButton = props => {
     return (
         <button className='col-12 btn btn-outline-dark' style={{'backgroundColor': '#5F4A62'}}>
-            <FaArrowUp />
+            <FaArrowDown />
         </button>
     );
 };
 
-export default UpButton;
+export default DownButton;
