@@ -23,7 +23,19 @@ h1, h2 {
   color: white;
 }
 
-.transitionPane {
+.transitionPane1 {
   transform: translateY(-630px);
+}
+
+.transitionPane2 {
+  transform: translateY(-1260px);
+}
+
+.transitionPane3 {
+  transform: translateY(-1890px);
+}
+
+.transitionPane4 {
+  transform: translateY(-2520px);
 }
 

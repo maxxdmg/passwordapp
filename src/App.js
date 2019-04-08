@@ -11,54 +11,67 @@ import Controls from './Components/Controls/Controls.js';
 class App extends Component {
   state = {
     passText: '********',
-    location: 0,
-    animate: false,
-    hovered: false,
-    paneClass: ''
+    paneClass: '',
+    upBtnDisabled: true,
+    downBtnDisabled: false
   };
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
 
   handleButtonDown = () => {
-    this.setState({paneClass: 'transitionPane'}, () => {
-      setTimeout(() => {
-        this.setState({paneClass: ''})
-      }, 1000)
-    });
+    const currClass = this.state.paneClass;
+    switch (currClass) {
+      case 'transitionPane1':
+        this.setState({paneClass: 'transitionPane2', passText: 'thisismypassword'});
+        break;
+
+      case 'transitionPane2':
+        this.setState({
+          paneClass: 'transitionPane3', 
+          passText: 'fastpasscoral'
+        });
+        break;
+
+      case 'transitionPane3':
+        this.setState({paneClass: 'transitionPane4', downBtnDisabled: true});
+        break;
+
+      case 'transitionPane4':
+        break;
+
+      default:
+        this.setState({
+          paneClass: 'transitionPane1', 
+          upBtnDisabled: false,
+          passText: 'password'});
+        break;
+    }
   }
 
 
-  handleScroll = () => {
-    let scrollOffset = window.pageYOffset;
-    
-    console.log(scrollOffset-this.state.location);
-    if (scrollOffset - this.state.location > 135) {
-      if (scrollOffset >= 135 && scrollOffset < 400)
-      this.setState({passText: 'password', animate: true}, () => {
-        setTimeout(() => {
-          this.setState({location: scrollOffset, animate: false})
-        }, 1000);
-      });
-      else if (scrollOffset >= 400 && scrollOffset < 600)
-        this.setState({passText: 'passwordpassword', animate: true}, () => {
-          setTimeout(() => {
-            this.setState({location: scrollOffset, animate: false})
-          }, 1000);
-        });
-      else if (scrollOffset >= 600 && scrollOffset < 800)
-        this.setState({passText: 'passwordpassword12', animate: true}, () => {
-          setTimeout(() => {
-            this.setState({location: scrollOffset, animate: false})
-          }, 1000);
-        });
-      else if (scrollOffset >= 800 && scrollOffset < 1000)
-        this.setState({passText: 'shinemetroid12', animate: true}, () => {
-          setTimeout(() => {
-            this.setState({location: scrollOffset, animate: false})
-          }, 1000);
-        });
+  handleButtonUp = () => {
+    const currClass = this.state.paneClass;
+    switch (currClass) {
+      case '':
+        break;
+
+      case 'transitionPane2':
+        this.setState({paneClass: 'transitionPane1', passText: 'password'});
+        break;
+
+      case 'transitionPane3':
+        this.setState({paneClass: 'transitionPane2', passText: 'thisismypassword'});
+        break;
+
+      case 'transitionPane4':
+        this.setState({
+          paneClass: 'transitionPane3', 
+          passText: 'fastpasscoral', 
+          downBtnDisabled: false});
+        break;
+
+      default:
+        this.setState({paneClass: '', upBtnDisabled: true});
+        break;
     }
   }
 
@@ -66,7 +79,11 @@ class App extends Component {
     return (
       <div>
         <Header password={this.state.passText} animate={this.state.animate} />
-        <Controls downClick={this.handleButtonDown}/>
+        <Controls
+            downDisabled={this.state.downBtnDisabled}
+            upDisabled={this.state.upBtnDisabled}
+            downClick={this.handleButtonDown}
+            upClick={this.handleButtonUp} />
         <Intro transition={this.state.paneClass}/>
         <Step1 transition={this.state.paneClass}/>
         <Step2 transition={this.state.paneClass}/>
