@@ -7,10 +7,14 @@ const Controls = props => {
         <div className={'row'} style={{ marginTop: '50px', backgroundColor: 'transparent', padding: '20px',
         position: 'fixed', width: '100px',
         height: '150px', float: 'left', marginLeft: '35px' }}>
-            <UpButton />
+            <UpButton 
+                clicked={props.upClick}
+                disabled={props.upDisabled} 
+                 />
             <div className='w-100' />
             <DownButton 
-            	clicked={props.downClick}/>
+            	clicked={props.downClick} 
+                disabled={props.downDisabled} />
         </div>
     );
 };
