@@ -13,7 +13,8 @@ class App extends Component {
     passText: '********',
     paneClass: '',
     upBtnDisabled: true,
-    downBtnDisabled: false
+    downBtnDisabled: false,
+    animate: false
   };
 
 
@@ -21,18 +22,36 @@ class App extends Component {
     const currClass = this.state.paneClass;
     switch (currClass) {
       case 'transitionPane1':
-        this.setState({paneClass: 'transitionPane2', passText: 'thisismypassword'});
+        this.setState({
+          paneClass: 'transitionPane2', 
+          passText: 'thisismypassword',
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
 
       case 'transitionPane2':
         this.setState({
           paneClass: 'transitionPane3', 
-          passText: 'fastpasscoral'
-        });
+          passText: 'fastpasscoral',
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
 
       case 'transitionPane3':
-        this.setState({paneClass: 'transitionPane4', downBtnDisabled: true});
+        this.setState({
+          paneClass: 'transitionPane4', 
+          downBtnDisabled: true,
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
 
       case 'transitionPane4':
@@ -42,7 +61,12 @@ class App extends Component {
         this.setState({
           paneClass: 'transitionPane1', 
           upBtnDisabled: false,
-          passText: 'password'});
+          passText: 'password',
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
     }
   }
@@ -55,22 +79,48 @@ class App extends Component {
         break;
 
       case 'transitionPane2':
-        this.setState({paneClass: 'transitionPane1', passText: 'password'});
+        this.setState({
+          paneClass: 'transitionPane1', 
+          passText: 'password',
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
 
       case 'transitionPane3':
-        this.setState({paneClass: 'transitionPane2', passText: 'thisismypassword'});
+        this.setState({
+          paneClass: 'transitionPane2', 
+          passText: 'thisismypassword',
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
 
       case 'transitionPane4':
         this.setState({
           paneClass: 'transitionPane3', 
           passText: 'fastpasscoral', 
-          downBtnDisabled: false});
+          downBtnDisabled: false,
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
 
       default:
-        this.setState({paneClass: '', upBtnDisabled: true});
+        this.setState({
+          paneClass: 'transitionPane0',
+          upBtnDisabled: true,
+          animate: true}, () => {
+            setTimeout(() => {
+              this.setState({animate: false})
+                  }, 600);
+          });
         break;
     }
   }

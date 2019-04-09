@@ -16,7 +16,7 @@ let Step1 = props => {
                  aspect of it's strength. This is due to the fundamental nature of how password cracking works. 
                  Password cracking is the act of guessing passwords until the correct one is found. Also known as
                  brute forcing passwords, all tools and methods for cracking is built upon the idea of brute force.
-                 But how the length of a password deters cracking is very simple. The time taken to guess a password
+                 How the length of a password deters cracking is very simple. The time taken to guess a password
                  gets exponentially larger the longer a password is. For a complex password the amount of time needed
                  to guess a password with basic brute forcing is unreasonably long. For example the time it takes to 
                  crack (which is just simply guessing) the 7 character long password 'abcdefg' is 0.29 millseconds 

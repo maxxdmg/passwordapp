@@ -19,7 +19,8 @@ let Header = props => {
 					boxShadow: '0px 0px 2px 1px black'}} className='col-4 m-3 p-0 text-left'>
 					<h5 style={{
 						lineHeight: '40px'
-						}} className={props.animate ? 'animate' : ''}>{props.password}</h5>
+						}} className={props.animate ? 'animate' : ''}>{props.password}<span className='cursor'>|</span></h5>
+					
 				</div>
 				<div className='col-2' />
 				<div className='col-1 mt-1'>
