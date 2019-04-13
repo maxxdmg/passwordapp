@@ -6,7 +6,7 @@ const Controls = props => {
     return (
         <div className={'row'} style={{ marginTop: '50px', backgroundColor: 'transparent', padding: '20px',
         position: 'fixed', width: '100px',
-        height: '150px', float: 'left', marginLeft: '35px' }}>
+        height: '150px', marginLeft: '0px', zIndex: '10' }}>
             <UpButton 
                 clicked={props.upClick}
                 disabled={props.upDisabled} 

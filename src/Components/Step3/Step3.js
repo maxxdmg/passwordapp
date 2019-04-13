@@ -5,7 +5,7 @@ let Step3 = props => {
     if (props.transition)
         cssClass += ' ' + props.transition;
     return (
-        <div style={{ backgroundColor: '#1C7AD8', marginTop: '50px' }}
+        <div style={{ backgroundColor: '#1C7AD8', marginTop: '50px', zIndex: 5}}
             className={cssClass}>
             <div className='text-left p-3'>
                 <h2 className='font-weight-bold'> Section header goes here! </h2>

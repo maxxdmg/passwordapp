@@ -5,7 +5,7 @@ let Intro = props => {
     if (props.transition)
     	cssClass += ' ' + props.transition;
     return (
-        <div style={{ backgroundColor: '#CE3B44', marginTop: '120px'}}
+        <div style={{ backgroundColor: '#CE3B44', marginTop: '120px', zIndex: '5'}}
             className={cssClass}>
             <div className='text-left p-3'>
                 <h2 className='font-weight-bold'> Anatomy of a Password! </h2>
@@ -21,7 +21,7 @@ let Intro = props => {
                 </p>
 
                 <p style={{'textIndent': '40px'}} className='p-2 m-0'>Take a look at the 'password' box
-                at the top of the site. Although it may be hidden currently moving to the next section via the
+                at the top of the site. Although it may be hidden currently, moving to the next section via the
                 down button will reveal a very insecure password. After each password practice is discussed the box will change 
                 to reflect the topic covered. Watch as the example password blooms from insecurity to competency!
                 </p>

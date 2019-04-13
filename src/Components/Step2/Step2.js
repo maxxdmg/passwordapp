@@ -5,14 +5,14 @@ let Step2 = props => {
     if (props.transition)
         cssClass += ' ' + props.transition;
     return (
-        <div style={{ backgroundColor: '#72AE5F', marginTop: '50px' }}
+        <div style={{ backgroundColor: '#72AE5F', marginTop: '50px', zIndex: 5}}
             className={cssClass}>
             <div className='text-left p-3'>
                 <h2 className='font-weight-bold'> Common phrases, random words & dictionary attacks </h2>
             </div>
             <div className='w-100' />
-            <div style={{ backgroundColor: '#72D75F', width: '100%', padding: '3px', paddingTop: '12px', height: '500px'}} >
-                  <p style={{'textIndent': '40px'}} className='p-3'>A common method for creating long passwords is to use a common phrase or
+            <div style={{ backgroundColor: '#72D75F', width: '100%', padding: '2px', height: '500px' }} >
+                 <p style={{'textIndent': '40px'}} className='p-2 m-0'>A common method for creating long passwords is to use a common phrase or
                   a string of related words, such as "ThisIsMyPassword" or "GreenTreeOutsideGround".  While long passwords like these are resitant
                   to traditional brute force attacks, they are still vulnerable to a form of brute force attack known as a dictionary attack.   
                   A dictionary attack is a form of password cracking that checks for commonly used passwords or strings of related words.  

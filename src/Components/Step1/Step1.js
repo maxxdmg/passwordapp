@@ -5,14 +5,14 @@ let Step1 = props => {
     if (props.transition)
         cssClass += ' ' + props.transition;
     return (
-        <div style={{ backgroundColor: '#EC9717FF', marginTop: '50px' }}
+        <div style={{ backgroundColor: '#EC9717FF', marginTop: '50px',zIndex: 5}}
             className={cssClass}>
             <div className='text-left p-3'>
                 <h2 className='font-weight-bold'> Longer Passwords & Brute Forcing  </h2>
             </div>
             <div className='w-100' />
-            <div style={{ backgroundColor: '#EFAA42FF', width: '100%', padding: '3px', paddingTop: '12px', height: '500px' }} >
-                 <p style={{'textIndent': '40px'}} className='p-3'>The length of a password is the most crucial
+            <div style={{ backgroundColor: '#EFAA42FF', width: '100%', padding: '2px', height: '500px' }} >
+                 <p style={{'textIndent': '40px'}} className='p-2 m-0'>The length of a password is the most crucial
                  aspect of it's strength. This is due to the fundamental nature of how password cracking works. 
                  Password cracking is the act of guessing passwords until the correct one is found. Also known as
                  brute forcing passwords, all tools and methods for cracking is built upon the idea of brute force.
