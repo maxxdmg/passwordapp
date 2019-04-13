@@ -35,7 +35,7 @@ class App extends Component {
       case 'transitionPane2':
         this.setState({
           paneClass: 'transitionPane3', 
-          passText: 'fastpasscoral',
+          passText: 'viralcoralpass',
           animate: true}, () => {
             setTimeout(() => {
               this.setState({animate: false})
@@ -46,6 +46,7 @@ class App extends Component {
       case 'transitionPane3':
         this.setState({
           paneClass: 'transitionPane4', 
+          passText: 'viralcoralpass1$',
           downBtnDisabled: true,
           animate: true}, () => {
             setTimeout(() => {
@@ -103,7 +104,7 @@ class App extends Component {
       case 'transitionPane4':
         this.setState({
           paneClass: 'transitionPane3', 
-          passText: 'fastpasscoral', 
+          passText: 'viralcoralpass', 
           downBtnDisabled: false,
           animate: true}, () => {
             setTimeout(() => {
@@ -116,6 +117,7 @@ class App extends Component {
         this.setState({
           paneClass: 'transitionPane0',
           upBtnDisabled: true,
+          passText: '********',
           animate: true}, () => {
             setTimeout(() => {
               this.setState({animate: false})
