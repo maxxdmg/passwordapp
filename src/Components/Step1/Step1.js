@@ -18,7 +18,7 @@ let Step1 = props => {
                  brute forcing passwords, all tools and methods for cracking is built upon the idea of brute force.
                  How the length of a password deters cracking is very simple. The time taken to guess a password
                  gets exponentially larger the longer a password is. For a complex password the amount of time needed
-                 to guess a password with basic brute forcing is unreasonably long. For example, according to  the time it takes to 
+                 to guess a password with basic brute forcing is unreasonably long. For example, the time it takes to 
                  crack (which is just simply guessing) the 7 character long password 'abcdefg' is 0.29 millseconds 
                  as of 2015. That is pretty quick, by changing the password from the seven character long 'abcdefg'
                  to the 12 character long 'abcdefghijkl' the time to crack is increased to 2 centuries. That is a 
