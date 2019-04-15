@@ -46,7 +46,7 @@ class App extends Component {
       case 'transitionPane3':
         this.setState({
           paneClass: 'transitionPane4', 
-          passText: 'viralcoralpass1$',
+          passText: '2viral_coralpass35',
           downBtnDisabled: true,
           animate: true}, () => {
             setTimeout(() => {
