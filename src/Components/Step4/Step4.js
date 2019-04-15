@@ -13,7 +13,7 @@ let Step4 = props => {
             <div className='w-100' />
             <div style={{ backgroundColor: '#D361DB', width: '100%', padding: '3px', paddingTop: '12px', height: '500px' }} >
                 <p style={{ 'textIndent': '40px' }} className='p-2 m-0'>
-                    The most secure passwords take into account all of the practices discussed on this website, making them resistant various forms
+                    The most secure passwords take into account all of the practices discussed on this website, making them resistant to various forms
                     of password cracking while also being easy for the user to remember.
                     </p>
                 <ul className='p-4 m-0'>
@@ -23,7 +23,7 @@ let Step4 = props => {
                         making them resistant to attacks which check for these minor variations.</li>
                 </ul>
                 <p style={{ 'textIndent': '40px' }} className='p-2 m-0'>
-                    An example of a secure password which employs all of these practices is "CorrectHorseBatteryStaple".  This password is
+                    An example of a secure password which employs all of these practices is "viralcoralpass".  This password is
                     resistant to dictionary attacks because it consists of random, unrelated words.  It is also resistiant to traditional brute force
                     attacks because of its length.  A 25 character password such as this would take roughly 228 quintillion years to crack using brute
                     force on a modern desktop PC.

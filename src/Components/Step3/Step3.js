@@ -25,6 +25,9 @@ let Step3 = props => {
                     password.  Furthermore, substituting letters or misspelling words can make a password difficult to remember,
                     so it is not a recommended practice.           
                 </p>
+				<p style={{ 'textIndent': '40px' }} className='p-2 m-0'>
+					These types of changes don't add a meaninful security to your password, while making it harder to remember. Having passwords that utilize these techniques aren't weaker than ones that don't, but you use them at your own inconvenience.
+				</p>]
             </div>
         </div>
     );

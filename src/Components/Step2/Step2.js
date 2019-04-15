@@ -8,7 +8,7 @@ let Step2 = props => {
         <div style={{ backgroundColor: '#72AE5F', marginTop: '50px', zIndex: 5}}
             className={cssClass}>
             <div className='text-left p-3'>
-                <h2 className='font-weight-bold'> Common phrases, random words & dictionary attacks </h2>
+                <h2 className='font-weight-bold'> Common Phrases, Random Words & Dictionary Attacks </h2>
             </div>
             <div className='w-100' />
             <div style={{ backgroundColor: '#72D75F', width: '100%', padding: '2px', height: '500px' }} >

@@ -14,8 +14,7 @@ let Intro = props => {
             <div style={{ backgroundColor: '#E64B50', width: '100%', padding: '2px', height: '500px'}} >
                 <p style={{'textIndent': '40px'}} className='p-2 m-0'>The art of Password creation becomes more and more critical as society 
                 	is increasingly digitized. The consequences of lacking good password pratices are become more dire as the average
-                	person is lives more of their life online. This short semi-interactive site will dissect good password practices and
-                	explain where they originate. Readers will not only know the standards of good password practice but also have the innerworkings
+                	person lives more of their life online. The goal of this site is to explain some good password practices that the average user can take advantage of and go into where they come from. Readers will not only know the standards of good password practice but also have the innerworkings
                 	of password cracking demystified. This site is not a lecture but a walkthrough of the 
                 	anatomy of a password!
                 </p>
