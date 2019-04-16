@@ -1,6 +1,6 @@
 import React from 'react';
 
-let Step2 = props => {
+let Footer = props => {
     let cssClass = 'container p-0';
     if (props.transition)
         cssClass += ' ' + props.transition;
@@ -41,4 +41,4 @@ let Step2 = props => {
     );
 };
 
-export default Step2;
+export default Footer;
