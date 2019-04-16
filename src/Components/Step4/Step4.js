@@ -22,17 +22,19 @@ let Step4 = props => {
                     <li style={{ 'textIndent': '20px' }} > They also don't use common substitiutions or alternate spellings,
                         making them resistant to attacks which check for these minor variations.</li>
                 </ul>
-                <p style={{ 'textIndent': '40px' }} className='p-2 m-0'>
-                    An example of a secure password which employs all of these practices is "viralcoralpass".  This password is
-                    resistant to dictionary attacks because it consists of random, unrelated words.  It is also resistiant to traditional brute force
-                    attacks because of its length.  A 25 character password such as this would take roughly 228 quintillion years to crack using brute
-                    force on a modern desktop PC.
-                    </p>
+
                 <p style={{ 'textIndent': '40px' }} className='p-2 m-0'>
                     For those wanting additional security, passwords can be made even stronger by adding numbers and symbols. This forces an attacker to check the entire character
-                    space when trying to guess your password.  The above password only contains letters, meaning there are only 52 possible choices 
+                    space when trying to guess your password.  The previous password "viralcoralpass" only contains letters, meaning there are only 52 possible choices 
                     that need to be checked for each character in the password.  Adding numbers and symbols raises the number of possible choices to 
                     95, making the password even more difficult to crack!
+                    </p>
+
+                                    <p style={{ 'textIndent': '40px' }} className='p-2 m-0'>
+                    An example of a secure password which employs all of these practices is "2viral_coralpass35".  This password is
+                    resistant to dictionary attacks because it consists of random, unrelated words.  It is also resistant to traditional brute force
+                    attacks because of its length.  An 18 character password such as this would take roughly 4 trillion years to crack using brute
+                    force on a modern desktop PC.
                     </p>
             </div>
         </div>

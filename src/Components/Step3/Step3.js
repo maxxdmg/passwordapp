@@ -27,7 +27,7 @@ let Step3 = props => {
                 </p>
 				<p style={{ 'textIndent': '40px' }} className='p-2 m-0'>
 					These types of changes don't add a meaninful security to your password, while making it harder to remember. Having passwords that utilize these techniques aren't weaker than ones that don't, but you use them at your own inconvenience.
-				</p>]
+				</p>
             </div>
         </div>
     );
