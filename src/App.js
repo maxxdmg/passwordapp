@@ -6,6 +6,7 @@ import Step1 from './Components/Step1/Step1.js';
 import Step2 from './Components/Step2/Step2.js';
 import Step3 from './Components/Step3/Step3.js';
 import Step4 from './Components/Step4/Step4.js';
+import Footer from './Components/Footer/Footer.js';
 import Controls from './Components/Controls/Controls.js';
 
 class App extends Component {
@@ -47,7 +48,6 @@ class App extends Component {
         this.setState({
           paneClass: 'transitionPane4', 
           passText: '2viral_coralpass35',
-          downBtnDisabled: true,
           animate: true}, () => {
             setTimeout(() => {
               this.setState({animate: false})
@@ -56,6 +56,13 @@ class App extends Component {
         break;
 
       case 'transitionPane4':
+        this.setState({
+          paneClass: 'transitionPaneFooter', 
+          downBtnDisabled: true
+          });
+        break;
+
+      case 'transitionPaneFooter':
         break;
 
       default:
@@ -113,6 +120,13 @@ class App extends Component {
           });
         break;
 
+      case 'transitionPaneFooter':
+        this.setState({
+          paneClass: 'transitionPane4',
+          downBtnDisabled: false});
+        break;
+
+
       default:
         this.setState({
           paneClass: 'transitionPane0',
@@ -141,6 +155,7 @@ class App extends Component {
         <Step2 transition={this.state.paneClass}/>
         <Step3 transition={this.state.paneClass}/>
         <Step4 transition={this.state.paneClass}/>
+        <Footer transition={this.state.paneClass}/>
       </div>
     );
   }

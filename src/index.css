@@ -54,6 +54,12 @@ h1, h2 {
   will-change: transform;
 }
 
+.transitionPaneFooter {
+  transform: translateY(-3150px);
+  transition: transform 350ms linear;
+  will-change: transform;
+}
+
 .cursor {
     font-size: 25px;
     animation: blink .85s step-end infinite;
