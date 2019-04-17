@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/passwordapp/precache-manifest.d9ee5ac6faeae1d5adad0fd3cc16fcac.js"
+  "/passwordapp/precache-manifest.016ed370cbae3055e2a19a1b950d64ff.js"
 );
 
 workbox.clientsClaim();

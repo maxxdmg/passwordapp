@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/passwordapp/static/js/runtime~main.109d3304.js"
   },
   {
-    "revision": "f047b09dabb034744cde",
-    "url": "/passwordapp/static/js/main.edfc7fbd.chunk.js"
+    "revision": "f70adadbc7306b86c482",
+    "url": "/passwordapp/static/js/main.fa3c75ed.chunk.js"
   },
   {
     "revision": "cf01766ae709ea151581",
     "url": "/passwordapp/static/js/2.5d4abc1e.chunk.js"
   },
   {
-    "revision": "f047b09dabb034744cde",
-    "url": "/passwordapp/static/css/main.db991210.chunk.css"
+    "revision": "f70adadbc7306b86c482",
+    "url": "/passwordapp/static/css/main.95da7154.chunk.css"
   },
   {
-    "revision": "e1c218455d5d85bf81f00d3e05686c35",
+    "revision": "60f939d85e973652bb74aebae6a41272",
     "url": "/passwordapp/index.html"
   }
 ];
